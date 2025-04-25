@@ -1,0 +1,10 @@
+<form class="tab-view tab-view-height-auto" action="/user" method="post">
+  <% users.forEach((user) => { %>
+    <input type="submit" name="name" value="<%= user.id %>" id="<%= user.id %>">
+    <label for="<%= user.id %>" style="background-color: <%= user.color %>;">
+      <%= user.name %>
+    </label>1
+    <% }); %>
+    <input type="submit" name="add" value="new" id="tab">
+    <label for="tab">Add another person</label>
+</form>

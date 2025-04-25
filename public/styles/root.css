@@ -1,0 +1,30 @@
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100vh;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #21252b;
+}
+
+button {
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+}

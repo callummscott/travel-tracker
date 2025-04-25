@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Tracker</title>
+    <link rel="stylesheet" href="./styles/main.css">
+  </head>
+  <body>
+    <%- include("partials/users.ejs") %>
+    <%- include("partials/country-form.ejs") %>
+    <main>
+      <%- include("partials/map.ejs") %>
+    </main>
+
+    <h2 class="total-count">Total Countries: <%= total %></h2>
+    
+    <script>
+      const country_codes_string = "<%= countries %>";
+      if (country_codes_string) {
+        const country_codes = country_codes_string.split(",")
+        country_codes.forEach(code => {
+          document.getElementById(code).style.fill = "<%= color %>"
+        });
+      }
+    </script>
+  </body>
+</html>

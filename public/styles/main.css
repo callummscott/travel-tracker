@@ -1,0 +1,134 @@
+@import url("./root.css");
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  height: 100svh;
+}
+
+main {
+  opacity: 1;
+  transition: opacity 0.5s;
+
+  flex: 1;
+  display: inherit;
+  width: 100%;
+  flex-basis: 0;
+  overflow-y: hidden;
+}
+
+main svg {
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  margin: 0 2rem 2rem 2rem;
+
+  & path {
+    fill: #383d46;
+    fill-opacity: 1;
+    stroke: #21252b;
+    stroke-opacity: 1;
+    stroke-width: 0.5;
+    transition: 0.5s;
+  }
+}
+
+input {
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+  padding-left: 21px;
+}
+
+button {
+  text-transform: uppercase;
+  background: teal;
+  padding: 15px;
+  color: #ffffff;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  z-index: 1;
+}
+
+.total-count {
+  color: white;
+  padding: 1rem;
+  margin: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.tab-view {
+  font-size: 0;
+  text-align: left;
+}
+.tab-view > input {
+  position: absolute;
+  display: none;
+}
+.tab-view > label {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  transition: all 0.1s;
+  -o-transition: all 0.1s;
+  -ms-transition: all 0.1s;
+  -moz-transition: all 0.1s;
+  -webkit-transition: all 0.1s;
+}
+.tab-view > label i {
+  display: block;
+  float: left;
+  margin: 0 8px 0 -2px;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-size: 17px;
+}
+.tab-view > input:checked + label {
+  cursor: default;
+}
+.tab-view > ul {
+  list-style: none;
+  position: relative;
+  display: block;
+  overflow: hidden;
+  font-size: 13px;
+}
+.tab-view > ul > li {
+  position: absolute;
+  width: 100%;
+  overflow: auto;
+  padding: 30px 40px 40px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  opacity: 0;
+  transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+}
+.tab-view-height-auto > ul {
+  height: auto !important;
+}
+.tab-view-height-auto > ul > li {
+  position: static;
+  display: none;
+  height: auto !important;
+}
+.tab-view > label {
+  padding: 0 20px;
+  background: #e5e5e5;
+  font-size: 13px;
+  line-height: 49px;
+}
+.tab-view > label:hover {
+  background: #f2f2f2;
+}
