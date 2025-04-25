@@ -1,9 +1,9 @@
-# A multi-person travel tracker
+# Multi-person travel tracker
 > Keep track of your travels as well as those of your friends and family with this world map travel visualiser
 
-<img src="travel-tracker-screenshot.png" width="50%"/>
+<img src="travel-tracker-screenshot.png" width="70%"/>
 
-Stores and visualises the countries you and others have been to on a postgres database.
+Stores the countries you and others have been to on a postgres database and visualises them on a world map!
 
 ## Getting started
 
@@ -11,12 +11,12 @@ Stores and visualises the countries you and others have been to on a postgres da
 2. Create a new database and run the commands found in `queries.sql` to get set up
 3. Import the list of countries from `countries.csv` to the newly created `countries` table
 4. Set up a `.env` file with the following environment variables:
-    - [ ] PORT : The port that your express server is going to run on (e.g. 3000)
-    - [ ] DB_NAME : The name of your database
-    - [ ] DB_HOST : The name of your host (e.g. localhost)
-    - [ ] DB_USER : Your database user name (e.g. postgres)
-    - [ ] DB_PASSWORD : Your database password
-    - [ ] DB_PORT : The port that your database is running on (e.g. 5432)
+    - PORT : The port that your express server is going to run on (e.g. 3000)
+    - DB_NAME : The name of your database
+    - DB_HOST : The name of your host (e.g. localhost)
+    - DB_USER : Your database user name (e.g. postgres)
+    - DB_PASSWORD : Your database password
+    - DB_PORT : The port that your database is running on (e.g. 5432)
 5. Start the server with `npm start`
 6. Now just connect to `localhost:<process.env.PORT>` and get started!
 
